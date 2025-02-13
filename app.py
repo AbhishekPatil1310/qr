@@ -3,7 +3,6 @@ import qrcode
 from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.moduledrawers import RoundedModuleDrawer
 from qrcode.image.styles.colormasks import SolidFillColorMask
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -24,7 +23,7 @@ if __name__ == "__main__":
     )
 
     # Add the URL pointing to this Flask app (adjust localhost URL as needed)
-    qr.add_data("qr-el9qhzuhp-abhisheks-projects-680a2fd9.vercel.app")  # Replace with your deployed URL when hosted
+    qr.add_data("https://vercel.com/abhisheks-projects-680a2fd9/qr/46kBdZvSNSvYCZW2YNFDsFVtWLhK")  # Replace with your deployed URL when hosted
     qr.make(fit=True)
 
     # Customize the QR Code design
