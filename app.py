@@ -12,7 +12,7 @@ def personal_info():
 
 @app.route('/qr_code')
 def qr_code():
-    return send_file('static/qrcode.png', mimetype='image/png')
+    return send_file('static/qr_code.png', mimetype='naruto/png')
 
 if __name__ == "__main__":
     # Generate QR Code
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     )
 
     # Save the QR Code to the static folder
-    custom_qr.save('static/naruto.png')
+    custom_qr.save('static/qr_code.png')
 
     # Run the Flask app
     app.run(debug=True)
