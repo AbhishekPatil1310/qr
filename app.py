@@ -24,7 +24,7 @@ if __name__ == "__main__":
     )
 
     # Add the URL pointing to this Flask app (adjust localhost URL as needed)
-    qr.add_data("http://127.0.0.1:5000/")  # Replace with your deployed URL when hosted
+    qr.add_data("qr-el9qhzuhp-abhisheks-projects-680a2fd9.vercel.app")  # Replace with your deployed URL when hosted
     qr.make(fit=True)
 
     # Customize the QR Code design
