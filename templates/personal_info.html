@@ -5,39 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Information</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            color: #0056b3;
-        }
-        p {
-            font-size: 16px;
-            color: #555;
-        }
-        .qr-code {
-            margin-top: 20px;
-        }
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('static/naruto.png');
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffcccb;
+    animation: slideDown 1s ease-out;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Anchor styling */
+a {
+    color: #096bf4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0d93f9;
+}
+
+/* QR code container styling */
+.qr-code {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>John Doe</h1>
-        <p><strong>Email:</strong> johndoe@example.com</p>
-        <p><strong>Phone:</strong> +1234567890</p>
+        <h1>Nikhil Patil</h1>
+        <p><strong>Phone:</strong> +91 7975053002</p>
         <p><strong>instagram:</strong> <a href="https://www.instagram.com/_nikhil__patil96k?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@nikhil_patil</a></p>
-        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
         <div class="qr-code">
         </div>
     </div>
