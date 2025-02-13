@@ -11,7 +11,7 @@ def personal_info():
 
 @app.route('/qr_code')
 def qr_code():
-    return send_file('static/qr_code.png', mimetype='naruto/png')
+    return send_file('static/qr_code.png', mimetype='image/png')
 
 if __name__ == "__main__":
     # Generate QR Code
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     )
 
     # Add the URL pointing to this Flask app (adjust localhost URL as needed)
-    qr.add_data("https://vercel.com/abhisheks-projects-680a2fd9/qr/46kBdZvSNSvYCZW2YNFDsFVtWLhK")  # Replace with your deployed URL when hosted
+    qr.add_data("http://127.0.0.1:5000")  # Replace with your deployed URL when hosted
     qr.make(fit=True)
 
     # Customize the QR Code design
